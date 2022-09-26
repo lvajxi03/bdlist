@@ -91,8 +91,8 @@ func TestRemove2(t *testing.T) {
 }
 
 func TestRemove3(t *testing.T) {
-	var list *BDList = nil
-	err := list.RemoveAt(3)
+	var list *bdlist.BDList = nil
+	_, err := list.RemoveAt(3)
 	if err == nil {
 		t.Fatal("Expected non-nil error")
 	}
