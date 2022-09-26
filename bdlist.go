@@ -23,7 +23,7 @@ func NewElement(value any) *Element {
 	return element
 }
 
-// NewBDList creates new, empty BDList
+// New creates new, empty BDList
 func New() *BDList {
 	list := &BDList{Head: nil, Tail: nil, Length: 0}
 	return list
